@@ -233,10 +233,10 @@ def user_stats(df):
 
 def raw_data_print(df):
     """
-    Asks user if they want to see five lines of raw filtered data at a time.
+    Asks user if they want to see ten lines of raw filtered data at a time.
 
     Displays:
-    five lines of data at a time.
+    ten lines of data at a time.
     """
     # Enabling pandas to display all the columns (Note this was a suggestion from one of the reviewers)
     pd.set_option('display.max_columns',200)
