@@ -7,10 +7,12 @@
 Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+In an interactive environment, bikeshare data for Chicago, New York City, and
+Washington is loaded for the user to analyse and get useful statistics. The user
+is also able to see raw data five lines at a time filtered, as desired. 
 
 ### Files used
-bikeshare_2.py
-chicago.csv
-new_york_city.csv
-washington.csv
+* bikeshare_2.py
+* chicago.csv
+* new_york_city.csv
+* washington.csv
