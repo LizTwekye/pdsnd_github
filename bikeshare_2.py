@@ -16,7 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore bikeshare data for Chicago, New York City & Washington!')
 
     # User input for city (chicago, new york city, washington).
     cities = ['chicago', 'new york city', 'washington']
@@ -164,8 +164,8 @@ def station_stats(df):
     print('-'*40)
 
 
-def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+def travel_time_stats(df):
+    """Displays statistics on the total and average travel time."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -243,14 +243,14 @@ def raw_data_print(df):
 
     row_index = 0
     while True:
-        answer = input('Would you like to see 5 lines of the data?\n').lower()
+        answer = input('Would you like to see 10 lines of the data?\n').lower()
         if answer == 'no':
             break
         elif answer == 'yes':
             print(df.iloc[row_index:row_index+5])
             # Note: I used the following link to determine how iterate through rows using row indexing:
             # https://stackoverflow.com/questions/46380075/pandas-select-n-middle-rows
-            row_index += 5
+            row_index += 10
         else:
             print('Incorrect input. Try again')
     print('-'*40)
@@ -264,7 +264,7 @@ def main():
 
         time_stats(df)
         station_stats(df)
-        trip_duration_stats(df)
+        travel_time_stats(df)
         user_stats(df)
         raw_data_print(df)
 
