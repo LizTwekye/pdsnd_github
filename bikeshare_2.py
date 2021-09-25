@@ -243,14 +243,14 @@ def raw_data_print(df):
 
     row_index = 0
     while True:
-        answer = input('Would you like to see 5 lines of the data?\n').lower()
+        answer = input('Would you like to see 10 lines of the data?\n').lower()
         if answer == 'no':
             break
         elif answer == 'yes':
             print(df.iloc[row_index:row_index+5])
             # Note: I used the following link to determine how iterate through rows using row indexing:
             # https://stackoverflow.com/questions/46380075/pandas-select-n-middle-rows
-            row_index += 5
+            row_index += 10
         else:
             print('Incorrect input. Try again')
     print('-'*40)
