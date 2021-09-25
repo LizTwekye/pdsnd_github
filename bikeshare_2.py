@@ -238,7 +238,7 @@ def raw_data_print(df):
     Displays:
     five lines of data at a time.
     """
-    # Enabliing pandas to display all the columns (Note this was a suggestion from one of the reviewers)
+    # Enabling pandas to display all the columns (Note this was a suggestion from one of the reviewers)
     pd.set_option('display.max_columns',200)
 
     row_index = 0
